@@ -10,29 +10,34 @@
 </head>
 <body ng-controller='killerController'>
 
-<div class=divBlock>
-	<label class=labelFont>Name</label> 
-	<p class=inline pFont>John Smith</p>
+<div class="divBlock">
+	<label class="labelFont">Name</label> 
+	<p ng-hide='displayInput1' ng-click='switch1()' class="inline pFont">John Smith</p>
+	<input ng-blur='blur1()' ng-show='displayInput1' class="input" placeholder='First and Last name'>
 </div>
 
-<div class=divBlock>
-	<label class=labelFont>Email</label>
-	<p class=inline pFont>johnsmith@whatever.com</p>
+<div class="divBlock">
+	<label class="labelFont">Email</label>
+	<p ng-hide='displayInput2' ng-click='switch2()' class="inline pFont">johnsmith@mail.com</p>
+	<input ng-blur='blur2()' ng-show='displayInput2' class="input" placeholder='Enter Email Here'>
 </div>
 
-<div class=divBlock>
+<div class="divBlock">
 	<label class=labelFont>Birth Date</label>
-	<p class=inline pFont>November, 28 1985</p>
+	<p ng-hide='displayInput3' ng-click='switch3()' class="inline pFont">November, 28 1985</p>
+	<input ng-blur='blur3()' ng-show='displayInput3' class="input" placeholder='Month, Day, Year'>
 </div>
 
-<div class=divBlock>
-	<label class=labelFont>Company</label>
-	<p class=inline pFont>RefactorU</p>
+<div class="divBlock">
+	<label class="labelFont">Company</label>
+	<p ng-hide='displayInput4' ng-click='switch4()' class="inline pFont">RefactorU</p>
+	<input ng-blur='blur4()' ng-show='displayInput4' class="input" placeholder='Your Company Here'>
 </div>
 
-<div class=divBlock>
-	<h3 class=labelFont>Bio</h3>
-	<p class=inline pFont>Enter Biography Here</p>
+<div class="BiodivBlock">
+	<h3 class="labelFont">Bio</h3>
+	<p ng-hide='displayInput5' ng-click='switch5()' class="inline pFont">Enter Bio Here</p>
+	<input ng-blur='blur5()' ng-show='displayInput5' class="input" placeholder='Enter Your Bio Here'>
 </div>
 
 

@@ -15,12 +15,30 @@ body {
 	display: inline-block;
 	width: 300px;
 	margin-left: 10px;
+	border:thin solid lightgrey;
+	border-radius: 3px;
 }
 .divBlock {
 	display: block;
+	height: 52px;
 	width: 920px;
 	margin:10px 0 10px 10px;
 	border:thin solid blue;
 	border-radius: 5px;
+}
 
+.input {
+    width: 300px;
+    margin: 12px 0 10px 10px;
+    border: thin solid lightgrey;
+    border-radius: 3px;
+}
+
+.BiodivBlock {
+	display: block;
+	height: 120px;
+	width: 920px;
+	margin:10px 0 10px 10px;
+	border:thin solid blue;
+	border-radius: 5px;
 }
