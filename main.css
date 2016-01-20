@@ -1,0 +1,26 @@
+body {
+	width: 920px;
+}
+.labelFont {
+	font:16px;
+	font-weight: bold;
+	margin-left: 20px
+}
+
+.pFont {
+	font:14px;
+}
+
+.inline {
+	display: inline-block;
+	width: 300px;
+	margin-left: 10px;
+}
+.divBlock {
+	display: block;
+	width: 920px;
+	margin:10px 0 10px 10px;
+	border:thin solid blue;
+	border-radius: 5px;
+
+}
