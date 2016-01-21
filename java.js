@@ -3,47 +3,29 @@ angular.module('madModule',[])
 angular.module('madModule')
 	.controller('killerController',['$scope', function($scope){
 
-			$scope.switch1 = function(){
+		$scope.data = [' John Smith', 'johnsmit@whatever.com', 
+		'November, 28 1990', 'Google', 'Enter Your Bio Here'] 
 
-				$scope.displayInput1 = true
+		$scope.flip = [false, false, false, false, false]
+			
+			$scope.click = function(n){
+				console.log(n, 'click worked')
+				$scope.flip[n] = true
 			}
-			$scope.switch2 = function(){
-
-				$scope.displayInput2 = true
-			}
-			$scope.switch3 = function(){
-
-				$scope.displayInput3 = true
-			}
-			$scope.switch4 = function(){
-
-				$scope.displayInput4 = true
-			}
-			$scope.switch5 = function(){
-
-				$scope.displayInput5 = true
-			}
-
-			$scope.blur1 = function() {
+			
+			
+			$scope.blur = function(n) {	
+				$scope.flip[n] = false
 				
-				$scope.displayInput1 = false
 			}				
-			$scope.blur2 = function() {
-				
-				$scope.displayInput2 = false
-			}
-			$scope.blur3 = function() {
-				
-				$scope.displayInput3 = false
-			}
-			$scope.blur4 = function() {
-				
-				$scope.displayInput4 = false
-			}			
-			$scope.blur5 = function() {
-				
-				$scope.displayInput5 = false
-			}
+			
 		
+			$scope.submit = function() {
+				$scope.data[0] = $scope.data[5]
+				$scope.data[1] = $scope.data[6]
+				$scope.data[2] = $scope.data[7]
+				$scope.data[3] = $scope.data[8]
+				$scope.data[4] = $scope.data[9]
+			}
 
 	}])
