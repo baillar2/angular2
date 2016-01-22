@@ -10,7 +10,7 @@ form {
 	width: 70%;
     background-color: lavender;
     margin: 20px 15% 20px 15%;
-    height: 275px;
+    height: 300px;
     padding: 10px;
     border: thin solid black;
     border-radius: 3px;
@@ -41,15 +41,36 @@ label {
 .pContainer {
 	background: silver;
     width: 90%;
-    margin: 0 5%;
+    margin: 20px 5%;
     border: thin solid grey;
     border-radius: 3px;
 }
 
 .pfile {
 	padding-left: 20px;
+	line-height:middle; 
+}
+.pimage {
+	height: 200px;
+	padding-top: 15px;
+	padding-left: 15px;
+	border-radius: 60px;\
 }
 h2 {
 	font-size: 20px;
 	color: slateblue;
+}
+h1 {
+	position: absolute;
+	display: inline-block;
+	font-family: cursive;
+	font-size: 48px;
+	color:slateblue;
+	font-weight: bolder;
+	margin-top: 70px;
+	margin-left: 50px;
+	border: medium solid powderblue;
+    padding: 10px;
+    border-radius: 42px;
+    background-color: pink;
 }

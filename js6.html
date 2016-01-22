@@ -13,32 +13,35 @@
 <button ng-click='formClose()' ng-show='show' class="btn">Hide Form</button>
 
 <div ng-show='show' ng-hide='hide'>
-<form ng-submit='submit'>
-	<div>
+<form ng-submit='submit()'>
+	<div class="formDiv">
 		<label>Shirtless Selfie</label>
-		<!--<input ng-model=''type="image" > -->
+		<input type="file"> 
 	</div>
 	<div class="formDiv">
 		<label>Put Yer Name Here</label>	
-		<input class="input" ng-model='name' placeholder="You're not as good as Tom">
+		<input class="input" ng-model='profile.name' placeholder="You're not as good as Tom">
 	</div>
 	<div class="formDiv">
 		<label>Do You Even Read Bro?</label>	
-		<input class="input" ng-model='books' placeholder="Tom read 50 Shades of Grey">
+		<input class="input" ng-model='profile.books' placeholder="Tom read 50 Shades of Grey">
 	</div>
 	<div class="formDiv">
 		<label>What's a Library?</label>
-		<input class="input" ng-model='library' placeholder="Tom likes cats and Javascript">
+		<input class="input" ng-model='profile.library' placeholder="Tom likes cats and Javascript">
 	</div>
 	<div class="formDiv">
 		<label>a SHORT bio</label>
-		<input class="input" ng-model='bio' placeholder="Tom hates friends">
+		<input class="input" ng-model='profile.bio' placeholder="Tom hates friends">
 	</div>
 	<input class="btn" type="submit">
 </form>
 </div>
-<div class="pContainer">
-	<img src="">
+<div class="pContainer" >
+	<div class="pfile">
+		<img style="display:inline-block" class="pimage" src="tom.jpg">
+		<h1 style="display:inline-block">SingleSailors.com</h1>
+	</div>
 	<div class="pfile">
 		<h2>Name</h2>
 		<p>{{data[0]}}</p>
