@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='moduleOne'>
 <head>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="cssjs6.css">
@@ -7,33 +7,55 @@
 	<script type="text/javascript" src="javajs6.js"></script>
 	<title>JS6</title>
 </head>
-<body>
-<button class="Btn">Show Form</button>
+<body ng-controller='controllerOne'>
+
+<button ng-click='formOpen()' ng-show='!show'class="btn">Show Form</button>
+<button ng-click='formClose()' ng-show='show' class="btn">Hide Form</button>
+
+<div ng-show='show' ng-hide='hide'>
 <form ng-submit='submit'>
 	<div>
 		<label>Shirtless Selfie</label>
-		<input type="image" >
+		<!--<input ng-model=''type="image" > -->
 	</div>
-	<div>
+	<div class="formDiv">
 		<label>Put Yer Name Here</label>	
-		<input placeholder="You're not as good as Tom">
+		<input class="input" ng-model='name' placeholder="You're not as good as Tom">
 	</div>
-	<div>
+	<div class="formDiv">
 		<label>Do You Even Read Bro?</label>	
-		<input placeholder="Tom read 50 Shades of Grey">
+		<input class="input" ng-model='books' placeholder="Tom read 50 Shades of Grey">
 	</div>
-	<div>
+	<div class="formDiv">
 		<label>What's a Library?</label>
-		<input placeholder="Tom likes cats and Javascript">
+		<input class="input" ng-model='library' placeholder="Tom likes cats and Javascript">
 	</div>
-	<div>
+	<div class="formDiv">
 		<label>a SHORT bio</label>
-		<input placeholder="Tom hates friends">
+		<input class="input" ng-model='bio' placeholder="Tom hates friends">
 	</div>
-	<submit type="submit">
+	<input class="btn" type="submit">
 </form>
-<div>
-	
+</div>
+<div class="pContainer">
+	<img src="">
+	<div class="pfile">
+		<h2>Name</h2>
+		<p>{{data[0]}}</p>
+	</div>
+	<div class="pfile">
+		<h2>Favorite Books</h2>
+		<p>{{data[1]}}</p>
+	</div>
+	<div class="pfile">
+		<h2>Favorite Javascript Library</h2>
+		<p>{{data[2]}}</p>
+	</div>
+	<div class="pfile">
+		<h2>Biography</h2>
+		<p>{{data[3]}}</p>
+	</div>
+
 </div>
 
 </body>

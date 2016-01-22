@@ -1,0 +1,55 @@
+* {
+	box-sizing:border-box;
+}
+
+body {
+	width: 920px;
+	
+}
+form {
+	width: 70%;
+    background-color: lavender;
+    margin: 20px 15% 20px 15%;
+    height: 275px;
+    padding: 10px;
+    border: thin solid black;
+    border-radius: 3px;
+}
+label {
+	display: inline-block;
+	width: 200px;
+}
+.btn {
+	margin-top: 20px;
+    margin-left: 50px;
+    padding: 8px 15px;
+    border-radius: 3px;
+}
+.formDiv {
+	margin: 10px 0 10px 20px;
+    height: 30px;
+    font-size: 18px;
+}
+.input {
+	line-height: normal;
+    width: 300px;
+    margin-left: 10px;
+    border: thin solid lightgrey;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+.pContainer {
+	background: silver;
+    width: 90%;
+    margin: 0 5%;
+    border: thin solid grey;
+    border-radius: 3px;
+}
+
+.pfile {
+	padding-left: 20px;
+}
+h2 {
+	font-size: 20px;
+	color: slateblue;
+}
