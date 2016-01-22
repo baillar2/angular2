@@ -21,15 +21,16 @@ angular.module('moduleOne')
 		}
 		$scope.submit = function() {
 			console.log($scope.users)
-			
+			console.log($scope.users)
 			$scope.users.push($scope.profile)
-			
+			console.log($scope.users)
 			console.log($scope.profile)
-			$scope.data[0] = $scope.users[0].name
-			$scope.data[1] = $scope.users[0].books	
-			$scope.data[2] = $scope.users[0].library
-			$scope.data[3] = $scope.users[0].bio
-
+			for ( i=0 ; i<$scope.users.length ; i++){
+			$scope.data[0] = $scope.users[i].name
+			$scope.data[1] = $scope.users[i].books	
+			$scope.data[2] = $scope.users[i].library
+			$scope.data[3] = $scope.users[i].bio
+			}
 		}
 
 	}])
